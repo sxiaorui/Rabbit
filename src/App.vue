@@ -1,7 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1>app</h1>
-  </div>
+  <el-button type="primary">i am button</el-button>
 </template>
