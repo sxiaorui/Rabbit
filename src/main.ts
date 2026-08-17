@@ -1,14 +1,7 @@
 import { createApp } from 'vue'
 import App from '@/App.vue'
+import router from '@/router'
 
-createApp(App).mount('#app')
+import "@/styles/common.scss";
 
-
-import { getCategory } from "@/apis/testAPI";
-getCategory()
-    .then(res => {
-        console.log(res)
-    })
-    .catch(e => {
-        console.log("请求失败", e)
-    })
+createApp(App).use(router).mount('#app')
